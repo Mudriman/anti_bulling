@@ -1,0 +1,17 @@
+.pdf-container {
+    width: 100%;
+    max-width: 1300px; /* Максимальная ширина контейнера PDFViewer */
+    height: 80vh;
+    overflow: auto;
+    margin: 0 auto; /* Центрирование контейнера на странице */
+    .pdf-object {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pdf-container {
+        height: 60vh;
+    }
+}

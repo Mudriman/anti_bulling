@@ -1,0 +1,98 @@
+.mainContent {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    .aboutUs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-right: 20px; /* Увеличил отступ для больших экранов */
+  
+      .logo {
+        font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333; /* Чуть более темный цвет для лучшей читаемости */
+        text-transform: uppercase; /* Приведение текста к верхнему регистру */
+      }
+  
+      .text {
+        p {
+          margin: 0 0 15px 0; /* Увеличил немного отступы между параграфами */
+          line-height: 1.8; /* Увеличил межстрочный интервал для лучшей читаемости */
+          color: #666; /* Цвет текста немного светлее основного */
+        }
+      }
+    }
+  
+    .image {
+      margin-top: 30px;
+      max-width: 100%;
+      text-align: center; /* Центрирование изображения по центру блока */
+  
+      img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        transform: rotate(13deg);
+        display: inline-block;
+        transform-origin: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень для изображения */
+      }
+    }
+  
+    .lines {
+      position: relative; /* Изменил на relative для адаптивности */
+      margin-top: 30px; /* Добавил отступ сверху */
+  
+      .line {
+        width: 200%;
+        height: 600px;
+        background-color: red;
+        position: absolute;
+        top: -3px;
+        transform-origin: center;
+  
+        &:nth-child(1) {
+          transform: rotate(20deg);
+          width: 150%;
+          left: -50%;
+        }
+  
+        &:nth-child(2) {
+          transform: rotate(-10deg);
+          width: 120%;
+          left: 30%;
+        }
+      }
+    }
+  
+    // Медиа-запросы для адаптивности
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+  
+      .aboutUs {
+        margin-right: 0;
+        text-align: center;
+  
+        .logo {
+          font-size: 28px; /* Уменьшил размер шрифта на мобильных устройствах */
+        }
+      }
+  
+      .image {
+        margin-top: 20px;
+      }
+  
+      .lines {
+        display: none; // Скрыть линии на мобильных устройствах
+      }
+    }
+  }
+  
