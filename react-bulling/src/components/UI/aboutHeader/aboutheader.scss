@@ -1,12 +1,9 @@
 .aboutHeader {
     position: relative;
-    background:
-        linear-gradient(0deg, rgba(0, 0, 0, 0.6) 30%, rgba(255, 255, 255, 0.4) 100%),
-        url("https://avatanplus.com/files/resources/original/5c54816a839a4168aa19882b.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 30%, rgba(255, 255, 255, 0.4) 100%), url("https://avatanplus.com/files/resources/original/5c54816a839a4168aa19882b.jpg");
     background-size: cover;
     background-position: center;
     height: 30vh;
-    /* или установите высоту по своему усмотрению */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,29 +11,57 @@
     text-align: center;
     color: white;
     width: 100%;
-    /* Занимать всю ширину контейнера */
     margin: 0 auto;
+    overflow: hidden;
 
     .header {
-        font-size: 3vw;
-        /* Адаптивный размер шрифта */
-
+        margin-top: 25px;
+        font-size: 36px;
         margin-bottom: 30px;
+        font-weight: bold;
         color: white;
-        /* Цвет текста, чтобы он был видим на фоне */
         line-height: 0.7;
+        max-width: 90%;
 
-        /* Уменьшаем расстояние между строками */
         span {
             display: block;
+            word-wrap: break-word;
         }
     }
 
     .header-low {
-        font-size: 2vw;
-        /* Адаптивный размер шрифта */
+        font-size: 24px;
         margin-bottom: 20px;
         color: white;
-        /* Цвет текста, чтобы он был видим на фоне */
+        max-width: 90%;
+        word-wrap: break-word;
+    }
+
+    // Медиа-запросы для адаптивности
+    @media (max-width: 1200px) {
+        .header {
+            font-size: 32px;
+        }
+        .header-low {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            font-size: 28px;
+        }
+        .header-low {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header {
+            font-size: 24px;
+        }
+        .header-low {
+            font-size: 16px;
+        }
     }
 }

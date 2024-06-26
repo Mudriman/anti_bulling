@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.scss';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -12,15 +13,15 @@ const Footer = () => {
                 <div className="footer-section links">
                     <h3>Полезные ссылки</h3>
                     <ul>
-                        <li><a href="/parents">Для родителей</a></li>
-                        <li><a href="/children">Для обучающихся</a></li>
-                        <li><a href="/teachers">Для учителей</a></li>
+                        <li><Link to="/parents">Для родителей</Link></li>
+                        <li><Link to="/children">Для обучающихся</Link></li>
+                        <li><Link to="/teachers">Для учителей</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section contact">
                     <h3>Контакты</h3>
                     <p>Email: support@example.com</p>
-                    <p>Телефон: +7 123 456 7890</p>
+                    <p>Телефон: 8 800 707 70 22</p>
                 </div>
             </div>
             <div className="footer-bottom">

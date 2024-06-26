@@ -1,6 +1,5 @@
 import React from 'react';
 import './parents.scss';
-import { Bloodtype } from '@mui/icons-material';
 
 const Parents = () => {
     return (

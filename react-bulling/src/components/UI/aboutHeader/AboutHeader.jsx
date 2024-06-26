@@ -5,9 +5,9 @@ const AboutHeader = () => {
     return (
         <section className='aboutHeader'>
             <div className="header">
-                <span>скажи</span><br />
-                <span>нет</span><br />
-                <span>буллингу!</span>
+                <span>Скажи</span><br />
+                <span>Буллингу</span><br />
+                <span>Нет!</span>
             </div>
             <div className="header-low">
                 вместе мы сможем победить травлю
